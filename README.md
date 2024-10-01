@@ -314,6 +314,16 @@
                     super.onAdLoaded()
                     // this is call back when ads is loaded successfully and ready to show
                 }
+
+                override fun onAdClosed() {
+                    super.onAdClosed()
+                    // action when ads is closed                  
+                }
+
+                override fun onAdFailedToLoad(adError: ApAdError?) {
+                    super.onAdFailedToLoad(adError)
+                    // action when ad failed to load
+                }
             }
         )
 
@@ -504,6 +514,16 @@
                 super.onAdLoaded()
                 // this is call back when ads is loaded successfully and ready to show
             }
+
+            override fun onAdClosed() {
+                super.onAdClosed()
+                // action when ads is closed                  
+            }
+
+            override fun onAdFailedToLoad(adError: ApAdError?) {
+                super.onAdFailedToLoad(adError)
+                // action when ad failed to load
+            }
         })
 
         // this method is used to set the native ad view
@@ -521,10 +541,12 @@
 - Preview native fullscreen:
     - Loading ads:
       
-      ![image](https://github.com/user-attachments/assets/4fb9a6c6-3e1d-4b10-adda-ba8c8a0fe7a3)
-
+      ![image](https://github.com/user-attachments/assets/f313276e-6817-4f1d-8b4f-98058ff3aae6)
 
     - Ads loaded:
+
+      ![image](https://github.com/user-attachments/assets/bee7cb00-56aa-495d-a6e7-310ab0fd721e)
+
  
       
 
